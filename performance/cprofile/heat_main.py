@@ -4,6 +4,12 @@ import argparse
 
 from heat import init_fields, write_field, iterate
 
+# python -m cProfile -o heat_result.dat heat_main.py
+# python -m pstats heat_result.dat
+#   strip
+#   sort time
+#   stats 10
+
 
 def main(input_file='bottle.dat', a=0.5, dx=0.1, dy=0.1, 
          timesteps=200, image_interval=4000):
