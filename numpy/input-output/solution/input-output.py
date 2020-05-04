@@ -1,7 +1,7 @@
 import numpy as np
 import sys
 
-filename = sys.argv[1]
+filename = '../xy-coordinates.dat'
 xy = np.loadtxt(filename)
 xy[:,1] += 2.5
-np.savetxt('new-' + filename, xy, fmt='%.6f', header='modified data')
+np.savetxt('new-' + 'xy-coordinates.dat', xy, fmt='%.6f', header='modified data')

@@ -1,0 +1,15 @@
+View object vs copy
+view object is referentie naar origineel
+
+Numpy broadcasting: extensie van elementsgewijze operaties
+Werkt wanneer dimensies overeenkomen of een vd twee gelijk is aan 1
+bv:
+5 x 1 x 7
+    3 x 7
+Eerste array wordt drie keer gedupliceerd volgens de tweede dimensie, tweede array wordt 5 keer gedupliceerd volgens de
+eerste.
+
+Numpy maakt temporary arrays in bewerkingen. Kan leiden tot memory overhead. Kan vermeden worden met numexpr package.
+
+Numpy slicing werkt met stepsize, ::2 geeft even indices.
+
