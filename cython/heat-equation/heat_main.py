@@ -2,8 +2,14 @@ from __future__ import print_function
 import time
 import argparse
 
-from heat import init_fields, write_field, iterate
+from heat_cy import init_fields, write_field, iterate
 
+'''
+Speed up numpy in cython: we provide declarations for the NumPy arrays, transform the for -loops to be simple integers
+and disable also the bounds checking and negative indexing.
+
+Cython code not profiled by cProfile so you can add: @cython.profile(True)
+'''
 
 def main(input_file='bottle.dat', a=0.5, dx=0.1, dy=0.1, 
          timesteps=200, image_interval=4000):

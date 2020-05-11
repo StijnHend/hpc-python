@@ -3,5 +3,5 @@ from Cython.Build import cythonize
 
 # run file in terminal: python setup.py build_ext --inplace
 setup(
-     ext_modules=cythonize("cyt_module.pyx", annotate=True, language_level=3)
+     ext_modules=cythonize("fib_cyt.pyx", annotate=True, language_level=3)
 )

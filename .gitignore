@@ -1,3 +1,10 @@
 .idea/
 venv/
 *.pyc
+*.pyd
+*.c
+*.exp
+*.lib
+*.html
+*.obj
+*.png
